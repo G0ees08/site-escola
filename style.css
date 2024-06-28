@@ -1,10 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .cabecalho {
     background-color: #945b8a;
     color: white;
@@ -14,52 +17,71 @@ body {
     padding: 24px 0;
 }
 
-.cabecalho-imagem{
-    width: 10%;
+.cabecalho-imagem {
+    width: 100px; /* Ajuste conforme necessário */
 }
 
-.cabecalho-lista-item{
+.cabecalho-lista {
+    flex: 1; /* Para ocupar o espaço restante */
+    text-align: center; /* Centraliza os itens da lista */
+}
+
+.cabecalho-lista ul {
+    list-style-type: none;
+}
+
+.cabecalho-lista-item {
     display: inline-block;
     margin: 0 16px;
     font-size: 16px;
 }
 
-.escola-imagem{
-    width: 25%;
-}
-
-.escola{
-    background-image: linear-gradient(#a1088d,#4b063c);
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.escola-div-conteudo{
-    width: 35%;
-}
-
-
-.escola-titulo{
-    padding: 24px 0;
-}
-
-.estudante{
-    padding: 24px 0;
-}
-.estudante-imagem{
-    width: 120px;
-}
-
-.estudante-icone{
-    width: 24px;
-    padding: 4px 8px;
-}
-
-.estudante-div{
+.escola {
+    background-image: linear-gradient(#a1088d, #4b063c);
+    color: white;
     text-align: center;
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
+.escola-imagem {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 400px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Garante que a imagem se comporte como bloco */
+}
+
+.estudante {
+    padding: 24px 0;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.estudante-titulo {
+    margin-bottom: 16px;
+}
+
+.estudante-todos {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha conforme necessário */
+}
+
+.estudante-div {
+    width: 200px; /* Largura fixa para cada bloco de estudante */
+    margin: 16px; /* Espaçamento entre os blocos de estudante */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.estudante-imagem {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 180px; /* Define uma largura máxima */
+    margin-bottom: 8px; /* Espaçamento abaixo da imagem */
+}
+
+.estudante-nome {
+    margin-bottom: 8px; /* Espaçamento abaixo do nome */
+}
+
+.estudante-icone {
+    width: 24px; /* Ajuste conforme necessário */
+    margin: 0 4px; /* Espaçamento entre os ícones */
+}
